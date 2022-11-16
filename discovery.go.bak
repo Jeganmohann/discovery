@@ -30,8 +30,7 @@ func ServiceDiscoveryWithConsul(sId string) (s *ServiceInfo) {
 	//url = fmt.Sprintf("http://%s:%v/helloworld", address, port)
 	return &ServiceInfo{
 		ServiceId:   sId,
-		ServiceName: service.Service,
-		ServiceAddress: service.Address,
+		ServiceName: service.Address,
 		Port:        service.Port,
 	}
 }
